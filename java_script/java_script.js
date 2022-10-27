@@ -39,24 +39,28 @@ $(document).ready(function () {
         // Tooltip mesagge __________________________________________________________________
 
         var ttipholder = $('#tooltip'),
-            ttip       = $("#tooltip p")
             collection = $(".gallery a img");
-
+        
         collection.mouseenter(function(){
+            if(! ttipholder.length){
+                ttipholder = $('<div id="tooltip"><p> </p></div>').appendTo('body');
+            }
             $(ttipholder).show();
             $(this).mouseleave(function(){
                 $(ttipholder).hide();
             })
         });
-
+        
         $(collection).mouseenter(function(){
             $("body").on("mousemove", function(event){
                 var relX = event.pageX - $(this).offset().left + 20,
                     relY = event.pageY - $(this).offset().top + 25;
-
-                ttipholder.css({"left": relX , "top": relY});
+                    
+                    ttipholder.css({"left": relX , "top": relY});
             });
-            var alttext = $(this).attr("alt");
+                
+            var alttext = $(this).attr("alt"),
+                ttip = $("#tooltip p");
 
             if (alttext !== ttip.text()){
                 $(ttip).text(alttext);
