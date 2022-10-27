@@ -1,0 +1,22 @@
+// GDPR ________________________________
+
+.gdpr {
+  width: 60%;
+  margin-left: 8%;
+  font-size: em(20);
+  h3 {
+    margin-bottom: 0.5em;
+  }
+  h4 {
+    margin: 0;
+    text-indent: 1em;
+  }
+  p {
+    padding-left: 2em;
+    text-indent: 1em;
+    line-height: em(25, 20);
+  }
+  p:last-child {
+    padding-bottom: em(40, 20);
+  }
+}

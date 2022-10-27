@@ -1,0 +1,41 @@
+// Premenné ___________________________________________________________________
+// Farby
+$logo-green: #71b441;
+$logo-brown: #7f4611;
+$logo-gold: #e4df04;
+$logo-white: #f9f9f9;
+$fb-blue: #1a6ed8;
+$ig-rose: #e1306c;
+$ta-green: #00af87;
+$header-color: #cfc9c9;
+$banner-color: #303224;
+$overlay-background: rgba(0, 0, 0, 0.8);
+$sticky-color: #000;
+
+// Gradienty
+
+$overlay-gradient-button: linear-gradient(
+  to right,
+  #bdc3c7 0%,
+  #2c3e50 51%,
+  #bdc3c7 100%
+);
+
+$overlay-gradient-banner: linear-gradient(
+  to right,
+  $overlay-background 0%,
+  $logo-green 51%,
+  $overlay-background 100%
+);
+
+$nav-gradient-button: linear-gradient(
+  to right,
+  $logo-green 0%,
+  $logo-gold 51%,
+  $logo-brown 100%
+);
+
+// Font
+$base-font-size: 100%;
+
+$hand-ff: "Sedgwick Ave Display", cursive;

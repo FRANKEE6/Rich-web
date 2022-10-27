@@ -1,0 +1,147 @@
+// Media queries ____________________________________________________________________________________________________
+
+@media (max-width: 1570px) {
+  #mainNav {
+    margin-left: 1%;
+  }
+  .drive {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1480px) {
+  #mainNav {
+    display: none;
+  }
+  #altNav {
+    display: block;
+  }
+  .mainHeader {
+    background-position: 1%;
+  }
+}
+
+@media (max-width: 1410px) {
+  .reviews {
+    height: em(470);
+  }
+}
+
+@media (max-width: 1265px) {
+  footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    iframe {
+      margin: em(10) auto;
+    }
+  }
+  iframe.fb-post.fb_iframe_widget {
+    display: block;
+    height: 700px !important;
+  }
+  .index {
+    display: block;
+  }
+}
+
+@media (max-width: 1150px) {
+  h1 {
+    letter-spacing: 0;
+  }
+  body {
+    font-size: 75%;
+  }
+  footer a img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 890px) {
+  .mainHeader {
+    img {
+      height: em(180);
+      background-size: em(180) auto;
+    }
+    .wrapper {
+      width: 100%;
+      margin-left: 0;
+      padding-right: 2%;
+      text-align: right;
+    }
+  }
+  .mainHeader::after {
+    display: none;
+  }
+  #altNav ul li {
+    width: 19.7%;
+  }
+  .about {
+    width: 70%;
+  }
+}
+
+@media (max-width: 650px) {
+  .offer nav button {
+    font-size: em(17, 20);
+  }
+  .offer nav li {
+    margin: em(8, 20) 0.3% em(17, 20) 0.3%;
+    min-width: 80px;
+    max-width: 6%;
+  }
+  #simpoverlay .previous,
+  #simpoverlay .next {
+    width: 8vw;
+  }
+  #holder img {
+    width: 82vw;
+  }
+  footer {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 570px) {
+  .reviews {
+    height: em(550);
+  }
+  body {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+  .offer .mainContent {
+    width: 90%;
+  }
+  #altNav ul li {
+    width: 19.5%;
+  }
+  .socialIcons {
+    width: 40%;
+  }
+  .contact {
+    width: 60%;
+  }
+  .floatWrapper {
+    height: em(90);
+  }
+}
+
+@media (max-width: 520px) {
+  .index aside {
+    display: none;
+  }
+  footer iframe {
+    width: 95vw;
+  }
+  .mainHeader {
+    flex-direction: column;
+    align-items: center;
+    .wrapper {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+// About _______________________________
+
+.about {
+  text-align: center;
+  font-size: em(21);
+  width: 50%;
+  margin: em(15) auto;
+  line-height: em(22);
+  p {
+    padding: em(15) 0;
+  }
+  p:last-of-type {
+    padding-bottom: 0;
+  }
+  a {
+    color: $logo-brown;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+  }
+  .borderwrap {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    line-height: 0;
+    border-radius: 45%;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from($logo-gold),
+      color-stop(35%, $logo-green),
+      color-stop(65%, $logo-green),
+      to($logo-gold)
+    );
+    background: -o-linear-gradient(
+      left,
+      $logo-gold 0%,
+      $logo-green 35%,
+      $logo-green 65%,
+      $logo-gold 100%
+    );
+    background: linear-gradient(
+      to right,
+      $logo-gold 0%,
+      $logo-green 35%,
+      $logo-green 65%,
+      $logo-gold 100%
+    );
+  }
+  .subsocial {
+    font-size: em(70, 21);
+    a {
+      padding: 0 6%;
+      i:hover {
+        -webkit-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        transform: scale(1.6);
+        rotate: 360deg;
+      }
+    }
+  }
+}

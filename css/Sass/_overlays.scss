@@ -1,0 +1,141 @@
+// Overlays ___________________________________________________________________________________________________
+
+#simpoverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $overlay-background;
+  z-index: 20;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  .previous,
+  .next {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 5vw;
+    height: 100vh;
+    opacity: 0.8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: em(60);
+    background: $overlay-gradient-banner;
+    background-size: 200% auto;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    .fa-solid {
+      color: $logo-gold;
+      opacity: 0.5;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+    }
+  }
+  .previous {
+    background-position: right center;
+  }
+  .previous:hover,
+  .next:hover {
+    cursor: pointer;
+    .fa-solid {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+      opacity: 0.9;
+    }
+  }
+  .previous:hover {
+    background-position: left center;
+  }
+  .next:hover {
+    background-position: right center;
+  }
+  p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 80vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-size: em(20);
+    padding: em(5) 1%;
+    line-height: em(20);
+    background: $logo-gold;
+    opacity: 0.9;
+    border-radius: 8px;
+  }
+}
+
+#holder {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  margin-top: 2%;
+  position: relative;
+  padding: 0 1%;
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+  img {
+    border: 5px solid white;
+    border-radius: 5px;
+    max-width: 85vw;
+    max-height: 80vh;
+  }
+  #butout {
+    width: em(32);
+    height: em(32);
+    font-size: em(16);
+    text-align: center;
+    line-height: em(20);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    margin-right: 9px;
+    top: em(-10);
+    right: em(-10);
+    background-image: $overlay-gradient-button;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-size: 200% auto;
+    -webkit-box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 10px #eee;
+    border: 1px solid #2c3e50;
+  }
+  #butout:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    background-position: right center;
+  }
+}

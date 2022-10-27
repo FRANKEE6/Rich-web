@@ -1,0 +1,106 @@
+// Index ________________________________
+
+.index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.indexContent {
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  text-align: center;
+  h2 {
+    font-size: em(35);
+  }
+  p {
+    width: 80%;
+    text-align: center;
+    font-size: em(20);
+    margin: em(25) auto;
+  }
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: em(400);
+  overflow: hidden;
+  width: 97%;
+  margin: 0 2%;
+}
+
+.revrow1,
+.revrow2,
+.revrow3 {
+  height: inherit;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+}
+
+.flexing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+cite {
+  width: 28%;
+  position: relative;
+  font-size: em(18);
+}
+
+cite::before {
+  content: '"';
+  color: $logo-green;
+  font-size: em(90);
+  position: absolute;
+  left: -13%;
+  top: em(-9);
+}
+
+cite::after {
+  content: '"';
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: $logo-green;
+  font-size: em(90);
+  position: absolute;
+  right: -13%;
+  bottom: em(-9);
+}
+
+.index aside {
+  -ms-flex-preferred-size: 550px;
+  flex-basis: 550px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.index aside h2 {
+  width: 85%;
+  margin: em(10) auto;
+  text-align: center;
+}
+
+.fb-post {
+  display: block;
+  width: 500px !important;
+  margin: em(10) auto;
+}

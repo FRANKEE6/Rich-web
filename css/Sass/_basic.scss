@@ -1,0 +1,24 @@
+// Základ
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background: $logo-brown;
+  color: $logo-gold;
+}
+
+*::selection {
+  background: $logo-brown;
+  color: $logo-gold;
+}
+
+body {
+  font-size: $base-font-size;
+  background-color: $logo-white;
+  -webkit-font-smoothing: antialiased;
+}

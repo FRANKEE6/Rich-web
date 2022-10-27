@@ -1,0 +1,248 @@
+// Hlavička___________________________
+
+header {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: $logo-gold;
+}
+
+.mainHeader:after {
+  content: "";
+  width: em(250);
+  height: em(200);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url(../data/img/main/klasik_cut.png);
+  background-repeat: no-repeat;
+  background-size: em(250) em(200);
+  background-position: bottom right;
+  opacity: 0;
+  -webkit-animation-name: yummy;
+  animation-name: yummy;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+a {
+  white-space: nowrap;
+}
+
+.contact {
+  float: left;
+  font-size: em(20);
+  font-style: italic;
+  width: 74%;
+  line-height: em(30);
+  a {
+    color: $logo-gold;
+    margin-right: 8%;
+  }
+  a:hover .fa-solid {
+    position: relative;
+    -webkit-animation-name: shaker;
+    animation-name: shaker;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+  }
+  .fa-solid {
+    color: $logo-green;
+  }
+}
+
+.socialIcons {
+  float: right;
+  font-size: em(40);
+  width: 25%;
+  text-align: right;
+  a {
+    margin-right: 3%;
+  }
+  a:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+
+.fa-facebook {
+  color: $logo-green;
+}
+.fa-facebook:hover {
+  color: $fb-blue;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.fa-instagram {
+  color: $logo-green;
+}
+.fa-instagram:hover {
+  color: $ig-rose;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.fa-t {
+  color: $logo-green;
+}
+.fa-t:hover {
+  color: $ta-green;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.floatWrapper {
+  height: em(60);
+  padding: em(10) 2%;
+  border-bottom: 1px solid $logo-green;
+}
+
+.floatWrapper,
+.floatWrapper::before,
+.floatWrapper::after {
+  clear: both;
+}
+
+.mainHeader {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow: hidden;
+  a {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  img {
+    position: relative;
+    left: 1%;
+    height: em(200);
+    width: auto;
+    -webkit-animation-name: dynamic-entry;
+    animation-name: dynamic-entry;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+  }
+  .wrapper {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: 5%;
+  }
+}
+
+h1 {
+  margin: 0;
+  padding-top: em(5);
+  font-size: em(80);
+  font-family: $hand-ff;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-shadow: 3px 5px 6px $logo-green;
+}
+
+#mainNav {
+  margin-left: 5%;
+  width: 200px;
+  visibility: visible;
+  a {
+    width: 100%;
+    padding-right: 70%;
+  }
+  a:hover {
+    color: $logo-green;
+  }
+}
+
+#mainNav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  li {
+    width: 100%;
+    line-height: em(25);
+    font-size: em(20);
+    margin-bottom: em(5);
+    padding: 0 5%;
+    border-top: inset 2px;
+    border-left: inset;
+    border-color: $logo-green;
+    border-radius: 10px 50px 0 15px;
+    overflow: hidden;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  li:hover {
+    border-color: $logo-white;
+  }
+  li:first-child {
+    margin-top: em(5);
+  }
+}
+
+#altNav {
+  display: none;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  ul {
+    width: inherit;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    li {
+      display: block;
+      width: 15%;
+      padding-top: em(3);
+      line-height: em(30);
+      font-size: em(20);
+      text-align: center;
+      border-top: inset 2px;
+      border-left: inset 1px;
+      border-right: inset 1px;
+      border-radius: 50% 50% 0px 0;
+      border-color: $logo-green;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+    }
+  }
+}
+
+#altNav a:hover {
+  color: $logo-green;
+}
+
+#altNav ul .selected,
+#mainNav ul .selected {
+  border-color: $logo-white;
+}
+
+.openingHours {
+  text-indent: 0;
+  list-style: none;
+  margin: em(30) auto;
+  padding-inline-start: 0;
+  li {
+    display: inline-block;
+    margin-left: 5%;
+    font-size: em(20);
+  }
+}

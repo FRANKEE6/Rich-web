@@ -1,0 +1,5 @@
+// Funkcie ______________________________________________________________________
+// Font size
+@function em($size, $context: 16) {
+  @return ($size / $context) + em;
+}

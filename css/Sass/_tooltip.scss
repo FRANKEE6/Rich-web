@@ -1,0 +1,17 @@
+// Tooltip ___________________________________________________________________________________________________
+
+#tooltip {
+  position: absolute;
+  p {
+    max-width: 33vw;
+    text-align: center;
+    margin-left: -50%;
+    font-size: em(14);
+    line-height: em(20);
+    font-weight: bold;
+    padding: em(5) 2%;
+    background: $logo-green;
+    background: rgba($logo-green, 0.8);
+    border-radius: 10px;
+  }
+}

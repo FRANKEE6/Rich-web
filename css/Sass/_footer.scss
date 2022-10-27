@@ -1,0 +1,62 @@
+// Footer ___________________________________________________________________________________________________________
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: $logo-gold;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: em(10) 0.3%;
+  p {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-left: 1%;
+    width: 7vw;
+    -ms-flex-negative: 3;
+    flex-shrink: 3;
+  }
+  a:hover {
+    color: $logo-green;
+  }
+  img {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    width: 300px;
+    height: auto;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  .address {
+    margin-left: 2%;
+    padding-right: 1%;
+  }
+  ul {
+    list-style: none;
+    min-width: max-content;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    border-left: 3px solid $banner-color;
+    li {
+      display: block;
+      width: max-content;
+      margin: 0;
+      line-height: em(25);
+      white-space: nowrap;
+    }
+  }
+  iframe {
+    width: 500px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+}
