@@ -124,13 +124,17 @@ $(document).ready(function () {
             var actimg = $("#holder img"),
                 clickedimg = $(this);
 
-            if ($(clickedimg).prev().length == 0) $(".fa-chevron-left").fadeOut(0);
-            if ($(clickedimg).next().length == 0) $(".fa-chevron-right").fadeOut(0);
-
+            if ($(clickedimg).prev().length == 0){
+                 $(".fa-chevron-left").fadeOut(0);
+            }
+            if ($(clickedimg).next().length == 0){
+                $(".fa-chevron-right").fadeOut(0);
+            } 
 
             $(".previous").click(function(){
                 if($(clickedimg).prev().length == 0) $(".fa-chevron-left").fadeOut(0);
                 else $(".fa-chevron-right").fadeIn(500);
+                
                 if($(".fa-chevron-left").is(":hidden")) return;
 
                 var predosle = $(clickedimg).prev("a"),
